@@ -1,5 +1,8 @@
+//! This module is used to perform input and output operations.
+
 pub mod fs;
 
+/// Prompts for an input on `stdin` and returns it in a result.
 use std::{error::Error, io::Write};
 #[allow(unused)]
 pub fn input(prompt: &str) -> Result<String, Box<dyn Error>> {
