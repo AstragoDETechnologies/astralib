@@ -9,8 +9,9 @@ pub fn read_file(path: &str) -> Result<String, Box<dyn Error>> {
     Ok(contents)
 }
 
-/// Writes a files as String.
 use std::path::Path;
+
+/// Writes a files as String.
 #[allow(unused)]
 pub fn write_file(path: &str, contents: &str) -> Result<(), Box<dyn Error>> {
     let mut file = std::fs::File::create(Path::new(path))?;
