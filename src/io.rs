@@ -1,4 +1,4 @@
-mod fs;
+pub mod fs;
 
 use std::{error::Error, io::Write};
 #[allow(unused)]
