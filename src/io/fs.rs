@@ -12,7 +12,7 @@ pub fn read_file(path: &str) -> Result<String, Box<dyn Error>> {
 use std::path::Path;
 
 #[allow(unused)]
-/// Writes a files as String.
+/// Writes a file as String.
 pub fn write_file(path: &str, contents: &str) -> Result<(), Box<dyn Error>> {
     let mut file = std::fs::File::create(Path::new(path))?;
     file.write_all(contents.as_bytes())?;
